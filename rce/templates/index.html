@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Menú</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <h1>Registro Clinico Deportivo</h1>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li><a href="atencion/atencion" onclick="mostrarContenido('atencion')">Atención</a></li>
+            <li><a href="depor/deportista" onclick="mostrarContenido('deportista')">Deportista</a></li>
+            <li><a href="kinesiologo/kine" onclick="mostrarContenido('kinesiologo')">Kinesiólogo</a></li>
+            <li><a href="#" onclick="mostrarContenido('kinesiologo')">Historial</a></li>
+            <!-- Puedes agregar más elementos de menú si lo deseas -->
+        </ul>
+    </div>
+
+    <!-- Contenido de la página -->
+    <div id="atencion" class="contenido">
+        <!-- Aquí puedes colocar el contenido relacionado con Atención -->
+        <!-- ... -->
+    </div>
+
+    <div id="deportista" class="contenido">
+        <!-- Aquí puedes colocar el contenido relacionado con Deportista -->
+        <!-- ... -->
+    </div>
+
+    <div id="kinesiologo" class="contenido">
+        <!-- Aquí puedes colocar el contenido relacionado con Kinesiólogo -->
+        <!-- ... -->
+    </div>
+
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>
+
